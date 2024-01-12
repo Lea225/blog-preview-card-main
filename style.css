@@ -1,0 +1,89 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*{
+    font-family: 'Figtree',sans-serif;
+}
+
+body{
+    background-color: hsl(47, 88%, 63%);
+}
+.card{
+    padding: 20px;
+    margin: 5% auto;
+    position: relative;
+    border-radius: 10px;
+    border-top: 1px solid hsl(0, 0%, 7%);
+    border-left: 1px solid hsl(0, 0%, 7%);
+    background-color: hsl(0, 0%, 100%);
+}
+.card::after {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 7%);
+    z-index: -1;
+}
+.head-p1{
+    background-color: hsl(47, 88%, 63%);
+    width: 20%;
+    border-radius: 5px;
+    padding: 8px 10px;
+    font-weight: bold;
+}
+.head-p2{
+    color: hsla(0, 0%, 7%, 0.8);
+}
+h1{
+    font-size: 1.5em;
+}
+h1:hover{
+    cursor: pointer;
+    color:hsl(47, 88%, 63%);
+}
+.main-p{
+    color: hsla(0, 0%, 50%, 0.8);
+}
+h3{
+    font-size: 1em;
+    align-self: center;
+    color: hsl(0, 0%, 7%);
+    margin-left: 1rem;
+}
+.main-img{
+    border-radius: 10px;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+}
+.avatar-div{
+    display: flex;
+}
+.avatar-div{
+    height: 5vh;
+}
+@media screen and (max-width:650px) {
+    .card{
+        width: 55%;
+    }
+    .head-p1{
+        width: 23%;
+    }
+}
+@media screen and (min-width: 651px) and (max-width: 1000px) {
+    .card{
+        width: 45%;
+    }
+    .head-p1{
+        width: 21%;
+    }
+}
+@media screen and (min-width: 1001px) and (max-width: 1440px) {
+    .card{
+        width: 28%;
+    }
+}
